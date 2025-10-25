@@ -1,0 +1,15 @@
+#logo{
+border:solid black 3px;
+}
+
+header, nav, footer{
+    background-color: black;
+}
+
+nav{
+    color:white;
+}
+
+aside{
+    background-image:url(./img/dragon_side.png);
+}
