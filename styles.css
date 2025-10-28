@@ -1,5 +1,16 @@
+body{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15vh 20vh 55vh 10vh;
+}
+
 #logo{
 border:solid black 3px;
+}
+
+#logo img{
+    width:200px;
+    height: auto;
 }
 
 header, nav, footer{
@@ -7,9 +18,17 @@ header, nav, footer{
 }
 
 nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
     color:white;
+}
+
+main, nav, footer{
+    grid-column: 2/2;
 }
 
 aside{
     background-image:url(./img/dragon_side.png);
+    grid-column: 1/2;
 }
