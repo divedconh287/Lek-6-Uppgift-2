@@ -5,7 +5,10 @@ body{
 }
 
 #logo{
+display:flex;
+justify-content: center;
 border:solid black 3px;
+grid-column: 1/2;
 }
 
 #logo img{
@@ -17,15 +20,22 @@ header, nav, footer{
     background-color: black;
 }
 
-nav{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
+h1, nav a, footer a{
     color:white;
 }
 
-main, nav, footer{
+nav, h1, footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header, main, nav, footer{
     grid-column: 2/2;
+}
+
+main img{
+    
 }
 
 aside{
